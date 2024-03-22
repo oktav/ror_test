@@ -1,0 +1,10 @@
+base: &base
+  key: <%= ENV['VPN_API_KEY'] %>
+development:
+  <<: *base
+
+production:
+  <<: *base
+
+preprod:
+  <<: *base

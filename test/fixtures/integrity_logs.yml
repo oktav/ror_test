@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idfa: MyString
+  ban_status: MyString
+  ip: MyString
+  rooted_device: false
+  country: MyString
+  proxy: false
+  vpn: false
+  tor: false
+
+two:
+  idfa: MyString
+  ban_status: MyString
+  ip: MyString
+  rooted_device: false
+  country: MyString
+  proxy: false
+  vpn: false
+  tor: false

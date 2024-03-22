@@ -1,0 +1,10 @@
+base: &base
+  storage_type: database
+development:
+  <<: *base
+
+production:
+  <<: *base
+
+preprod:
+  <<: *base
