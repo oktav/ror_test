@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# BanStatus model
 class BanStatus < ApplicationRecord
   has_many :users
 
