@@ -14,3 +14,18 @@ good_countries = %w[IT ES UK US]
 # Make sure to store the countries in lowercase
 good_countries.map!(&:downcase)
 RedisStorage.instance.client.call('SADD', 'countries:whitelist', good_countries)
+
+# Create the default ban status
+BanStatus.find_or_create_by!(
+  name: 'not_banned',
+  pretty_name: 'Not banned',
+  description: 'User is not banned',
+  default: true
+)
+
+# Add other ban statuses
+BanStatus.find_or_create_by!(
+  name: 'banned',
+  pretty_name: 'Banned',
+  description: 'User is banned'
+)

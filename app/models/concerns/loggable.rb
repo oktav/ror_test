@@ -7,11 +7,9 @@ module Loggable
   included do
     def add_integrity_log_entry(ip:, rooted_device:, country:, vpnapi_security:)
       IntegrityLogger.persist(
-        idfa: idfa,
-        ban_status: ban_status,
-        ip: ip,
-        rooted_device: rooted_device,
-        country: country,
+        idfa:,
+        ban_status: ban_status.name,
+        ip:, rooted_device:, country:,
         proxy: vpnapi_security['proxy'],
         vpn: vpnapi_security['vpn']
       )

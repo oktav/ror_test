@@ -1,5 +1,6 @@
 base: &base
   key: <%= ENV['VPN_API_KEY'] %>
+  cache_expiration: 86400
 development:
   <<: *base
 
