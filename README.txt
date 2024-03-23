@@ -1,5 +1,8 @@
 # README
 
+Pull repo
+git clone git@github.com:oktav/ror_test.git
+
 Create postgres db with docker
 $ docker run --name postgres_16 --net=host -e POSTGRES_PASSWORD=secret -d postgres:16
 
